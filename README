@@ -1,0 +1,16 @@
+1. This is a demo keil project for STM32f103RCT6.
+2. 256KB Flash, 48KB SRAM, Internal RC 8MHz and 32KHz.
+3. High-density.
+
+
+/**********output**************/
+1. IAP
+    config.h:  CONFIG_USE_IAP 1
+    project options: IROM1: 0x8002000
+    *.bin
+2. Flymcu
+    config.h:  CONFIG_USE_IAP 0
+    project options: IROM1: 0x8000000
+    *.hex
+3. default serial output:
+    UART1, PA9:TXD, PA10:RXD, 8n1, 115200
