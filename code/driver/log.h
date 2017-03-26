@@ -8,7 +8,7 @@
 	#define LOG_TAG xxx
 	#include "log.h"
 */
-#define SYS_LOG_LEVEL SYS_LOG_LEVEL_DEBUG
+#define SYS_LOG_LEVEL SYS_LOG_LEVEL_INFO
 #define SYS_LOG_DETAIL_LEVEL SYS_LOG_DETAIL_LEVEL_FUNCTION
 #define _PRINT printf  //chose from printf or utPrt
 

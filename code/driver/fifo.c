@@ -5,7 +5,7 @@
 #include "stdlib.h"
 #include "common.h"
 
-#define FIFO_DEBUG 1
+#define FIFO_DEBUG 0
 /*
 
 	   table|
@@ -153,7 +153,7 @@ int fifo_out(fifo_t *fifo, FIFO_DATA_TYPE *data, FIFO_DATA_TYPE *len)
     }
     fifo->size--;
 #if FIFO_DEBUG
-        LOGD("out: size:%d data_len:%d out_cnt:%d",fifo->size,len,i);
+        LOGD("out: size:%d data_len:%d out_cnt:%d",fifo->size,*len,i);
         prta(data, *len);
 #endif
     return err;

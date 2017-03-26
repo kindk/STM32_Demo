@@ -53,7 +53,7 @@ static void delay(void)
   */
 void NMI_Handler(void)
 {
-	LOGE("==========NMI_Handler\r\n");
+	LOGE("==========NMI_Handler");
 }
 
 /**
@@ -66,7 +66,7 @@ void HardFault_Handler(void)
   /* Go to infinite loop when Hard Fault exception occurs */
   while (1)
   {
-	  LOGE("==========HardFault_Handler\r\n");
+	  LOGE("==========HardFault_Handler");
       delay();
   }
 }
@@ -81,7 +81,7 @@ void MemManage_Handler(void)
   /* Go to infinite loop when Memory Manage exception occurs */
   while (1)
   {
-	  LOGE("==========MemManage_Handler\r\n");
+	  LOGE("==========MemManage_Handler");
       delay();
   }
 }
@@ -96,7 +96,7 @@ void BusFault_Handler(void)
   /* Go to infinite loop when Bus Fault exception occurs */
   while (1)
   {
-	  LOGE("==========BusFault_Handler\r\n");
+	  LOGE("==========BusFault_Handler");
       delay();
   }
 }
@@ -111,7 +111,7 @@ void UsageFault_Handler(void)
   /* Go to infinite loop when Usage Fault exception occurs */
   while (1)
   {
-	  LOGE("==========UsageFault_Handler\r\n");
+	  LOGE("==========UsageFault_Handler");
       delay();
   }
 }
@@ -123,6 +123,7 @@ void UsageFault_Handler(void)
   */
 void SVC_Handler(void)
 {
+	LOGE("==========SVC_Handler");
 }
 
 /**
@@ -132,6 +133,7 @@ void SVC_Handler(void)
   */
 void DebugMon_Handler(void)
 {
+	LOGE("==========DebugMon_Handler");
 }
 
 /**
@@ -141,6 +143,7 @@ void DebugMon_Handler(void)
   */
 void PendSV_Handler(void)
 {
+	LOGE("==========PendSV_Handler");
 }
 
 /**
@@ -150,6 +153,7 @@ void PendSV_Handler(void)
   */
 void SysTick_Handler(void)
 {
+	LOGE("==========SysTick_Handler");
 }
 
 /******************************************************************************/

@@ -28,6 +28,7 @@ typedef struct
 
 #define utNow1ms(x)	((u16)(ut1ms-x))
 
+#define RCC_AFIO_ON  RCC_APB2PeriphClockCmd(RCC_APB2Periph_AFIO, ENABLE)
 #define RCC_GPIOA_ON RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOA, ENABLE)
 #define RCC_GPIOB_ON RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOB, ENABLE)
 #define RCC_GPIOC_ON RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOC, ENABLE)

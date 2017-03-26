@@ -8,6 +8,9 @@
 #include "mcu.h"
 #include "uart.h"
 #include "common.h"
+#include "key.h"
+
 extern led_t led;
 extern uart_t uart;
+extern key_t key;
 #endif

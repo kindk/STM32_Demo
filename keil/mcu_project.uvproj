@@ -348,7 +348,7 @@
             <uThumb>0</uThumb>
             <uSurpInc>0</uSurpInc>
             <VariousControls>
-              <MiscControls></MiscControls>
+              <MiscControls>--c99</MiscControls>
               <Define>USE_STDPERIPH_DRIVER,STM32F10X_HD</Define>
               <Undefine></Undefine>
               <IncludePath>..\std_library\inc;..\std_library\core;..\code\app;..\code\driver</IncludePath>
@@ -441,6 +441,16 @@
               <FileName>fifo.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\code\driver\fifo.c</FilePath>
+            </File>
+            <File>
+              <FileName>key.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\code\driver\key.c</FilePath>
+            </File>
+            <File>
+              <FileName>gpio.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\code\driver\gpio.c</FilePath>
             </File>
           </Files>
         </Group>

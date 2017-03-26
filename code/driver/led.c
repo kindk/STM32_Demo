@@ -16,8 +16,8 @@ kindk  2017/03/21  1.0  build this moudle
 static void led_on(led_t *led);
 static void led_off(led_t *led);
 static void led_toggle(led_t *led);
-
-void led_init(led_t *led, GPIO_TypeDef *gpio_group, u32 pin)
+//TODO use gpio.h
+void led_init(led_t *led, GPIO_TypeDef *gpio_group, u16 pin)
 {
 	GPIO_InitTypeDef GPIO_InitStructure;
 

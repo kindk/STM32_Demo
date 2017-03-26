@@ -7,6 +7,8 @@
 #include "common.h"
 #include "stdlib.h"
 
+//FIXME: read should not use callback, if user block the 
+//read, which will block driver layer.
 static void uart_clear_idle_flag(uart_t *t);
 static int uart_dma_write(uart_t *uart, u32 add, u8 len);
 

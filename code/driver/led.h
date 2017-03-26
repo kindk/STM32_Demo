@@ -29,7 +29,7 @@ struct _led{
 	void (*toggle)(led_t *led);
 };
 
-void led_init(led_t *led, GPIO_TypeDef *gpio_group, u32 pin);
+void led_init(led_t *led, GPIO_TypeDef *gpio_group, u16 pin);
 void led_test(led_t *led);
 
 #endif
